@@ -1,2 +1,1 @@
-# angular-docker-dev-environment
-Seed for developing Angular project entirely on Docker
+# Angular Docker Development Environment
