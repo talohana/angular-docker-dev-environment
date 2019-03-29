@@ -1,0 +1,13 @@
+version: "3"
+services:
+  dev:
+    container_name: dev
+    build: .
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./src:/usr/src/app/src
+    entrypoint: ng serve --host 0.0.0.0 --poll 1
+
+volumes:
+  node_modules:

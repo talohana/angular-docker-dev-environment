@@ -1,0 +1,8 @@
+version: "3"
+services:
+  seed:
+    image: node:lts-alpine
+    working_dir: "/usr/src/"
+    volumes:
+      - ./:/usr/src/cache
+    entrypoint: sh -c "npm i -g @angular/cli && ng new --skipInstall --skipGit && mv ./*/* /usr/src/cache"
