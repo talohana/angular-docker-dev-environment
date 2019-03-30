@@ -5,9 +5,12 @@ services:
     build: .
     ports:
       - "4200:4200"
+    environment:
+      NODE_ENV: development
     volumes:
-      - ./src:/usr/src/app/src
+      - ./src:/usr/src/app/src:cached
+      - ./e2e:/usr/src/app/e2e:cached
+      - ./tsconfig.json:/usr/src/app/tsconfig.json
+      - ./tslint.json:/usr/src/app/tslint.json
+      - ./package.json:/usr/src/app/package.json
     entrypoint: ng serve --host 0.0.0.0 --poll 1
-
-volumes:
-  node_modules:
