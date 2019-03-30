@@ -8,23 +8,19 @@ Develop an Angular app entirely on docker
 
 - Basic knowledge and understanding of [Docker](https://docs.docker.com/), [Angular CLI](https://cli.angular.io/) and [npm](https://www.npmjs.com/)
 
-## Installing
+# Notes
+
+- For [git-bash](https://git-scm.com/downloads) users, prefix the interactive docker command with `winpty`
+
+# Installing
 
 In order to create Angular project run
 
 ```
-docker-compose -f docker-compose.seed.yml up --build
-```
-
-for git-bash users
-
-```
-winpty docker-compose -f docker-compose.seed.yml up --build
+docker-compose -f docker-compose.seed.yml run seed
 ```
 
 After successful initialization remove the `docker-compose.seed.yml` file
-
-End with an example of getting some data out of the system or using it for a little demo
 
 # Running
 
@@ -39,12 +35,6 @@ Attach the container with
 
 ```
 docker exec -it dev sh
-```
-
-for git-bash users
-
-```
-winpty docker exec -it dev sh
 ```
 
 ## Authors
