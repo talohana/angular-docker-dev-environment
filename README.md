@@ -14,7 +14,7 @@ Develop an Angular app entirely on docker
 
 # Installing
 
-In order to create Angular project run
+Create Angular project by running
 
 ```
 docker-compose -f docker-compose.seed.yml run seed
