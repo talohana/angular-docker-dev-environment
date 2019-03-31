@@ -11,6 +11,7 @@ Develop an Angular app entirely on docker
 # Notes
 
 - For [git-bash](https://git-scm.com/downloads) users, prefix the interactive docker command with `winpty`
+- Before installing, you can override the `ng new` command at the `docker-compose.seed.yml` entrypoint property
 
 # Installing
 
