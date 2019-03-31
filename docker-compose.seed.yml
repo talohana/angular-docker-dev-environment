@@ -6,5 +6,5 @@ services:
     volumes:
       - ./:/usr/src/seed
     entrypoint: >
-      sh -c "npx @angular/cli new --skipInstall && 
+      sh -c "npx @angular/cli new --skipInstall --skipGit && 
              mv ./*/* /usr/src/seed"
