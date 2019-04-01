@@ -1,8 +1,9 @@
 node_modules
 Dockerfile
-docker-compose*
+docker-compose.yml
 .dockerignore
 .git
 .gitignore
 .vscode
-*.md
+README.md
+LICENSE
