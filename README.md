@@ -35,7 +35,7 @@ Once the server is running it will poll changes from host and auto reload the pa
 Attach the container with
 
 ```
-docker-compose exec -it dev sh
+docker-compose exec dev sh
 ```
 
 ## Copying node_modules
