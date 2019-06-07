@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:lts
 
 # Install global npm packages
 RUN npm i -g @angular/cli

@@ -6,8 +6,10 @@ services:
     ports:
       - "4200:4200"
     environment:
+      SHELL: /bin/bash
       NODE_ENV: development
     volumes:
+      - ~/.gitconfig:/etc/gitconfig
       - ./src:/usr/src/app/src:cached
       - ./e2e:/usr/src/app/e2e:cached
       - ./tsconfig.json:/usr/src/app/tsconfig.json
