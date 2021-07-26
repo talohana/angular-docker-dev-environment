@@ -2,6 +2,8 @@
 
 Develop an Angular app entirely on docker
 
+For a more detailed view check out [my blogpost](https://talohana.com/blog/dockerizing-angular-environment)
+
 ## Prerequisites
 
 - [Docker](https://docs.docker.com/) environment and [docker-compose](https://docs.docker.com/compose/) binaries installed.
